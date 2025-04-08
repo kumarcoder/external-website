@@ -4,7 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Embedded Webpage</title>
-   </head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            margin-right: 15px;
+        }
+
+        .content {
+            padding: 15px;
+            background-color: #f4f4f4;
+        }
+
+        .iframe-container {
+            flex-grow: 1;
+            height: 80%;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
 <body>
 
     <div class="content">
@@ -12,10 +56,9 @@
     </div>
 
     <div class="iframe-container">
-        <iframe src="https://posigen3--pgstg.sandbox.my.site.com/partner/s/cpsolution?recordId=006RT00000A2noTYAR" allowfullscreen>
-</iframe>
-
+        <iframe src="https://posigen3--pgstg.sandbox.my.site.com/partner/s/cpsolution?recordId=006RT00000A2noTYAR" allowfullscreen></iframe>
     </div>
 
 </body>
 </html>
+
